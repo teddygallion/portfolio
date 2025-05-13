@@ -1,4 +1,4 @@
-import NavBar from "../Navbar/NavBar";
+import NavBar from "../NavBar/NavBar";
 
 const Header = ({ isDarkMode, toggleDarkMode }) => {
   return (
