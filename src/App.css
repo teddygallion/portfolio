@@ -1,0 +1,200 @@
+
+.root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1a1a1a;
+}
+hr{
+  width:60%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+nav, footer{
+  background-color:#423c44;
+}
+.logo {
+  width: 10em;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: invert(100%);
+}
+
+
+main {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+h2 {
+  font-size: 3em;
+}
+header{
+  width: 100vw;
+}
+
+.about{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  font-family:Inter, sans-serif;
+  width: 90%;
+  background-color: #505050;
+  padding: 1em;
+  border-radius:3px;
+}
+ .contact{
+   display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  font-family:Inter, sans-serif;
+  width: 90%;
+  background-color: #505050;
+  padding: 1em;
+  border-radius:3px;
+ }
+.blurb{
+  margin-top:30px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-img img {
+  filter: grayscale(40%);
+  max-width: 100%;
+  margin:auto;
+}
+.about-img{
+  width:100%;
+}
+.about-text {
+  background-color: whitesmoke;
+  padding: 2%;
+  width: 50%;
+  font-size: larger;
+  color: black;
+  text-align: center;
+  border-radius:3px;
+}
+
+.about-text > p {
+  text-align: center;
+}
+.about-text li{
+  list-style-type: square
+}
+.Projects{
+  width:90%;
+}
+.projects-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  width: 20%;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid grey;
+  background-color:#505050;
+  border-radius: 2%;
+  margin: 1em;
+  padding: 1em;
+}
+
+.project-img {
+  width: 128px;
+  height: 128px;
+  margin: auto;
+}
+
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-top:.5%;
+  padding-bottom:1%;
+/*  background-color:rgba(9, 9, 9, 0.66)*/
+}
+
+.smolskul {
+  height: 30px;
+  padding-left:1%;
+}
+footer > span{
+  float:right;
+  margin-right:5%;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3em;
+  }
+  
+  h2 {
+    font-size: 2em;
+  }
+  
+  .about, .projects-container, .contact{
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-text{
+    width:80%;
+  }
+  .project-card {
+    width: 80%;
+  }
+}
+.light-mode {
+  background-color: #dfe3db;
+  color: black;
+}
+.light-mode .App{ 
+  background-color: #dfe3db
+}
+.light-mode nav, 
+.light-mode footer {
+  background-color: #aea7b0;
+}
+
+.light-mode .about {
+  background-color: #f9f9f9;
+}
+
+.light-mode .about-text {
+  background-color: #eaeaea;
+  color: black;
+}
+
+.light-mode .project-card {
+  background-color: white;
+  border: 1px solid lightgray;
+}
+
+.light-mode a {
+  color: darkblue;
