@@ -1,0 +1,23 @@
+.contact {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  font-family: "DM Sans", sans-serif;
+  width: 90%;
+  background-color: var(--dark-card);
+  padding: 1em;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  transition: background-color 0.4s ease;
+}
+
+.light-mode .contact {
+  background-color: var(--light-card);
+}
+
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+}

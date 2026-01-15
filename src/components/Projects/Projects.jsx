@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
+import "../../styles/Projects.css";
 import ProjectCard from "../ProjectCard/ProjectCard";
 
 const Projects = () => {
   const API_URL = import.meta.env.VITE_BACKEND_URL;
+
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -25,11 +27,13 @@ const Projects = () => {
   }, [API_URL]);
 
   return (
-    <section className="Projects">
-      <h2>Here is some stuff I've made:</h2>
-      {loading && <p>Loading projects...</p>}
+    <section className="projects-section">
+      <h2 className="projects-title">Here’s some stuff I’ve made</h2>
+
+      {loading && <p className="loading">Loading projects...</p>}
       {error && <p className="error">{error}</p>}
-      <div className="projects-container">
+
+      <div className="projects-grid">
         {projects.map((project, index) => (
           <ProjectCard
             key={index}
