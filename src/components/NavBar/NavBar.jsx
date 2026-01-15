@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import lampOff from '../../assets/lamp-off.svg';
 import lampOn from '../../assets/lamp-on.svg';
-import "../../styles/Navbar.css";
+import "../../styles/NavBar.css";
 
 const Navbar = ({ isDarkMode, toggleDarkMode }) => {
   const [hovered, setHovered] = useState(false);
